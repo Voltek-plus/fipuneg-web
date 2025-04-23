@@ -1,0 +1,42 @@
+.servicesSection {
+    padding: 6rem 0;
+    background-color: #f9fafb;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .sectionTitle {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2a2a72;
+    margin-bottom: 1rem;
+  }
+  
+  .sectionSubtitle {
+    text-align: center;
+    font-size: 1.25rem;
+    color: #6b7280;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .servicesSection {
+      padding: 4rem 0;
+    }
+    
+    .sectionTitle {
+      font-size: 2rem;
+    }
+    
+    .sectionSubtitle {
+      font-size: 1.1rem;
+      padding: 0 1rem;
+    }
+  }

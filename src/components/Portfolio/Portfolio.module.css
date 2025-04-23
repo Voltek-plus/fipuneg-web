@@ -1,0 +1,118 @@
+/* src/components/Portfolio/Portfolio.module.css */
+.portfolio {
+    padding: 4rem 1rem;
+    background-color: #f8fafc;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .mainTitle {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #2a2a72;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .subTitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #4a5568;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .subTitle strong {
+    font-weight: 700;
+    color: #2a2a72;
+  }
+  
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+  
+  .stepCard {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border-left: 4px solid #2a2a72;
+  }
+  
+  .stepCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stepHeader {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .stepNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #2a2a72;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  
+  .stepTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2a2a72;
+    margin: 0;
+  }
+  
+  .stepDescription {
+    color: #4a5568;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio {
+      padding: 3rem 1rem;
+    }
+    
+    .mainTitle {
+      font-size: 1.8rem;
+    }
+    
+    .subTitle {
+      font-size: 1.1rem;
+    }
+    
+    .gridContainer {
+      grid-template-columns: 1fr;
+    }
+    
+    .stepCard {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .gridContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
