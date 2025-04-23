@@ -8,5 +8,10 @@ export default defineConfig({
     modules: {
       localsConvention: 'camelCase' // Esto permite usar guiones en CSS pero camelCase en JS
     }
-  }
+  },
+  build: {
+    outDir: 'dist', // Asegúrate que coincide con la configuración de Netlify
+    emptyOutDir: true
+  },
+  base: './' //
 })
