@@ -27,7 +27,7 @@ const Header = () => {
       {/* El resto de tu código permanece exactamente igual */}
       <div className={styles.headerContainer}>
         <div className={styles.logoContainer}>
-          <img src="/logo-fipuneg.png" alt="FIPUNEG Logo" className={styles.logo} />
+          <img src="/logo.png" alt="FIPUNEG Logo" className={styles.logo} />
           <h1 className={styles.title}>FIPUNEG</h1>
         </div>
 
