@@ -49,7 +49,7 @@ const Footer = () => {
             </li>
             <li>
               <span>Dirección:</span>
-              <span>Caracas, Venezuela</span>
+              <span>Malabo, Guinea Ecuatorial</span>
             </li>
           </ul>
         </div>
