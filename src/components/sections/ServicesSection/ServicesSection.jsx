@@ -78,9 +78,6 @@ const navigate = useNavigate();
         <p className={styles.sectionSubtitle}>
           Soluciones completas para impulsar tu negocio en línea
         </p>
-        <button onClick={() => handleServiceClick(services[0])}>
-          Probar Navegación
-        </button>
         <ServicesGrid services={services} onServiceClick={handleServiceClick} />
       </div>
     </section>
