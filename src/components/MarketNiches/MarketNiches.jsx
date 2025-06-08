@@ -1,16 +1,22 @@
-// src/components/MarketNiches/MarketNiches.jsx
 import React from 'react';
+import { useNavigate } from 'react-router-dom'; // Importa useNavigate
 import styles from './MarketNiches.module.css';
 import Button from '../Button/Button';
 import { FaChartLine, FaUmbrellaBeach, FaTshirt, FaBalanceScale, FaPhoneAlt } from 'react-icons/fa';
 
 const MarketNiches = () => {
   const niches = [
-    { name: "Turismo", icon: <FaUmbrellaBeach /> },
-    { name: "Moda & Estilo", icon: <FaTshirt /> },
-    { name: "Abogados", icon: <FaBalanceScale /> },
-    { name: "Telecomunicaciones", icon: <FaPhoneAlt /> }
+    { name: 'Turismo', icon: <FaUmbrellaBeach /> },
+    { name: 'Moda & Estilo', icon: <FaTshirt /> },
+    { name: 'Abogados', icon: <FaBalanceScale /> },
+    { name: 'Telecomunicaciones', icon: <FaPhoneAlt /> },
   ];
+
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    navigate('/business-form'); // Navega a la nueva ruta
+  };
 
   return (
     <section className={styles.niches}>
@@ -28,7 +34,7 @@ const MarketNiches = () => {
             <FaChartLine className={styles.sectionIcon} />
             <h3 className={styles.sectionTitle}>Trading Forex</h3>
           </div>
-          
+
           <div className={styles.nichesContainer}>
             {niches.map((niche, index) => (
               <div key={index} className={styles.nicheItem}>
@@ -45,7 +51,7 @@ const MarketNiches = () => {
             </p>
           </div>
 
-          <Button variant="primary" className={styles.ctaButton}>
+          <Button variant="primary" className={styles.ctaButton} onClick={handleButtonClick}>
             Cuéntanos sobre tu negocio
           </Button>
         </div>
