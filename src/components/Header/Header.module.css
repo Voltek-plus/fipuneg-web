@@ -24,8 +24,9 @@
 }
 
 .logo {
-  height: 4rem;
-  width: auto;
+  width: 100px; /* Ajusta según el tamaño deseado */
+  height: auto;
+  object-fit: contain; /* Asegura que la imagen no se distorsione */
 }
 
 .title {

@@ -1,8 +1,8 @@
 // src/components/Header/Header.jsx
-import React, { useState, useEffect } from 'react'; // Añade useEffect
+import React, { useState, useEffect } from 'react'; 
 import styles from './Header.module.css';
 import Button from '../Button/Button';
-
+import logo from "../../assets/img/logo_PhotoGrid.png"
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,8 +27,8 @@ const Header = () => {
       {/* El resto de tu código permanece exactamente igual */}
       <div className={styles.headerContainer}>
         <div className={styles.logoContainer}>
-          <img src="/logo.png" alt="FIPUNEG Logo" className={styles.logo} />
-          <h1 className={styles.title}>FIPUNEG</h1>
+          <img src={logo} alt="FIPUNEG Logo" className={styles.logo} />
+          {/* <h1 className={styles.title}>FIPUNEG</h1> */}
         </div>
 
         <button 

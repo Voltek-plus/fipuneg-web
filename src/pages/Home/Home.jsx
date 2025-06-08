@@ -9,6 +9,7 @@ import Portfolio from '../../components/Portfolio/Portfolio';
 import AboutUs from '../../components/AboutUs/AboutUs';
 import MarketNiches from '../../components/MarketNiches/MarketNiches';
 import Contact from '../../components/Contact/Contact';
+import logo from "../../assets/img/logo_PhotoGrid.png"
 
 const Home = () => {
   return (
@@ -27,7 +28,7 @@ const Home = () => {
               </div>
             </div>
             <div className={styles.heroImage}>
-              <img src="/marketing-digital.svg" alt="Marketing Digital" />
+              <img src={logo} alt="FIPUNEG Logo" className={styles.logo} />
             </div>
           </div>
         </section>
