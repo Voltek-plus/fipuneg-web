@@ -2,6 +2,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import logo from "../../assets/img/logo_PhotoGrid.png"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -11,8 +12,8 @@ const Footer = () => {
       <div className={`container ${styles.footerContent}`}>
         <div className={styles.footerSection}>
           <div className={styles.footerLogo}>
-            <img src="/logo-fipuneg-white.png" alt="FIPUNEG Logo" />
-            <h3>FIPUNEG</h3>
+             <img src={logo} alt="FIPUNEG Logo" className={styles.logo} />
+            {/* <h3>FIPUNEG</h3> */}
           </div>
           <p className={styles.footerDescription}>
             Expertos en marketing digital y embudos de ventas para convertir prospectos en clientes.

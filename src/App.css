@@ -1,5 +1,10 @@
 /* src/App.css */
 :root {
+    /* Fuentes mejoradas */
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Avenir', 
+               'Helvetica', 'Arial', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
   /* Colores */
   --primary-color: #2a2a72;
   --primary-dark: #1a1a5a;
@@ -22,6 +27,12 @@
   /* Sombras */
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+  
+   /* Optimizaciones de renderizado */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 * {
