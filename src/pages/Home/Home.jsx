@@ -10,6 +10,7 @@ import AboutUs from '../../components/AboutUs/AboutUs';
 import MarketNiches from '../../components/MarketNiches/MarketNiches';
 import Contact from '../../components/Contact/Contact';
 import logo from "../../assets/img/logo_PhotoGrid.png"
+import Blog from '../../components/blog/Blog';
 
 const Home = () => {
   return (
@@ -36,6 +37,7 @@ const Home = () => {
         <Portfolio />
         <MarketNiches/>
         <AboutUs/>
+        <Blog />
         <Contact/>
         {/* Otras secciones irán aquí */}
       </main>

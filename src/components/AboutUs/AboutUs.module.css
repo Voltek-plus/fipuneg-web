@@ -1,130 +1,173 @@
-/* src/components/AboutUs/AboutUs.module.css */
 .about {
-    padding: 5rem 1rem;
-    background-color: white;
-  }
-  
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #2a004a, #4b0082);
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.title span {
+  color: #00ffcc;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #d3d3d3;
+}
+
+.textContent p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.features {
+  margin: 20px 0;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.featureIcon {
+  font-size: 1.5em;
+  color: #00ffcc;
+  margin-right: 10px;
+}
+
+h4 {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.features p {
+  margin: 5px 0 0;
+  color: #e0e0e0;
+}
+
+.imageContainer {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.imageWrapper {
+  max-width: 500px;
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carouselItem {
+  display: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.carouselItem.active {
+  display: block;
+}
+
+.placeholderImage {
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+h3 {
+  margin: 15px 0 10px;
+  font-size: 1.8em;
+}
+
+.carouselItem p {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
     flex-direction: column;
-    gap: 3rem;
+    text-align: center;
   }
-  
-  .content {
-    flex: 1;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    color: #2a2a72;
-    margin-bottom: 1rem;
-  }
-  
-  .title span {
-    color: #e63946; /* Color de acento */
-  }
-  
-  .subtitle {
-    font-size: 1.2rem;
-    color: #4a5568;
-    margin-bottom: 2rem;
-    font-weight: 500;
-  }
-  
-  .textContent {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  .textContent p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #4a5568;
-  }
-  
-  .features {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin: 2rem 0;
-  }
-  
-  .featureItem {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-  }
-  
-  .featureIcon {
-    background-color: #2a2a72;
-    color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    font-weight: bold;
-  }
-  
-  .featureItem h4 {
-    color: #2a2a72;
-    margin-bottom: 0.3rem;
-    font-size: 1.1rem;
-  }
-  
-  .featureItem p {
-    font-size: 0.95rem;
-    color: #4a5568;
-    margin: 0;
-  }
-  
+
   .imageContainer {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+    margin-top: 20px;
   }
-  
-  .imageWrapper {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  .title {
+    font-size: 2em;
   }
-  
+
+  .subtitle {
+    font-size: 1em;
+  }
+
   .placeholderImage {
-    background-color: #f0f4f8;
-    height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #2a2a72;
-    font-weight: bold;
+    width: 150px;
+    height: 150px;
+    font-size: 1em;
   }
-  
-  @media (min-width: 768px) {
-    .container {
-      flex-direction: row;
-      align-items: center;
-      gap: 4rem;
-    }
-    
-    .imageWrapper {
-      height: 400px;
-    }
+
+  h3 {
+    font-size: 1.5em;
   }
-  
-  @media (min-width: 1024px) {
-    .title {
-      font-size: 3rem;
-    }
-    
-    .subtitle {
-      font-size: 1.3rem;
-    }
+
+  .carouselItem p {
+    font-size: 1em;
   }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5em;
+  }
+
+  .placeholderImage {
+    width: 120px;
+    height: 120px;
+    font-size: 0.9em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .carouselItem p {
+    font-size: 0.9em;
+  }
+}

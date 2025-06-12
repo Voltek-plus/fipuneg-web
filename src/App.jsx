@@ -9,6 +9,9 @@ import MarketNiches from './components/MarketNiches/MarketNiches';
 import AboutUs from './components/AboutUs/AboutUs';
 import Contact from './components/Contact/Contact';
 import BusinessForm from './components/BusinessForm/BusinessForm';
+import Team from './components/AboutUs/Team';
+import Blog from './components/blog/Blog';
+import BlogDetail from './components/blog/BlogDetail';
 
 function App() {
   return (
@@ -16,10 +19,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/service-detail" element={<ServiceDetail />} />
+        <Route path="/team" element={<Team />} />
         <Route path="/services" element={<Home />} /> 
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogDetail />} />
         <Route path="/business-form" element={<BusinessForm />} />
       </Routes>
     </Router>
