@@ -2,7 +2,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import { FaFacebook, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
-import logo from "../../assets/img/logo_PhotoGrid.png"
+import logo from "../../assets/img/fipuneglogoblanco.png"
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -25,7 +25,6 @@ const Footer = () => {
             <a href="#" aria-label="WhatsApp"><FaWhatsapp /></a>
           </div>
         </div>
-        
         <div className={styles.footerSection}>
           <h4 className={styles.footerTitle}>Servicios</h4>
           <ul className={styles.footerLinks}>
@@ -36,7 +35,6 @@ const Footer = () => {
             <li><a href="#">Publicidad Digital</a></li>
           </ul>
         </div>
-        
         <div className={styles.footerSection}>
           <h4 className={styles.footerTitle}>Contacto</h4>
           <ul className={styles.contactInfo}>
@@ -67,7 +65,7 @@ const Footer = () => {
       
       <div className={styles.footerBottom}>
         <div className="container">
-          <p>&copy; {currentYear} FIPUNEG. Todos los derechos reservados.</p>
+          <p>&copy; {currentYear} FIPUNEG & Tecnologias Mas. Todos los derechos reservados.</p>
           <div className={styles.legalLinks}>
             <a href="#">Términos y Condiciones</a>
             <a href="#">Política de Privacidad</a>

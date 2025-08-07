@@ -11,7 +11,7 @@ main {
 
 .hero {
   padding: 8rem 0;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, #93278f 0%, #662d91 70%);
   overflow: hidden;
 }
 
@@ -30,19 +30,19 @@ main {
 
 .hero h1 {
   font-size: 3.5rem;
-  color: var(--primary-color);
+  color: var(--text-white);
   margin-bottom: 1rem;
   line-height: 1.2;
 }
 
 .hero p {
   font-size: 1.8rem;
-  color: var(--text-color);
+  color: var(--text-white);
   margin-bottom: 2rem;
 }
 
 .hero p strong {
-  color: var(--primary-dark);
+  color: var(--text-dark);
 }
 
 .heroButtons {

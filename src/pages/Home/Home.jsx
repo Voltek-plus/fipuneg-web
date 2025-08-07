@@ -9,7 +9,7 @@ import Portfolio from '../../components/Portfolio/Portfolio';
 import AboutUs from '../../components/AboutUs/AboutUs';
 import MarketNiches from '../../components/MarketNiches/MarketNiches';
 import Contact from '../../components/Contact/Contact';
-import logo from "../../assets/img/logo_PhotoGrid.png"
+import logo from "../../assets/img/fipuneglogoblanco.png"
 import Blog from '../../components/blog/Blog';
 
 const Home = () => {
