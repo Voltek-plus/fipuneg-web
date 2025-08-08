@@ -20,7 +20,7 @@ const Footer = () => {
           </p>
           <div className={styles.socialIcons}>
             <a href="#" aria-label="Facebook"><FaFacebook /></a>
-            <a href="#" aria-label="Instagram"><FaInstagram /></a>
+            <a href=" https://www.instagram.com/fipuneg_agency_/profilecard" aria-label="Instagram"><FaInstagram /></a>
             <a href="#" aria-label="LinkedIn"><FaLinkedin /></a>
             <a href="#" aria-label="WhatsApp"><FaWhatsapp /></a>
           </div>
