@@ -19,10 +19,10 @@ const Footer = () => {
             Expertos en marketing digital y embudos de ventas para convertir prospectos en clientes.
           </p>
           <div className={styles.socialIcons}>
-            <a href="#" aria-label="Facebook"><FaFacebook /></a>
+            <a href="https://www.facebook.com/share/1Aktm819Tf/?mibextid=wwXIfr" aria-label="Facebook"><FaFacebook /></a>
             <a href=" https://www.instagram.com/fipuneg_agency_/profilecard" aria-label="Instagram"><FaInstagram /></a>
             <a href="#" aria-label="LinkedIn"><FaLinkedin /></a>
-            <a href="#" aria-label="WhatsApp"><FaWhatsapp /></a>
+            <a href="https://whatsapp.com/channel/0029VabDSY7AInPriEQEVs2h" aria-label="WhatsApp"><FaWhatsapp /></a>
           </div>
         </div>
         <div className={styles.footerSection}>
