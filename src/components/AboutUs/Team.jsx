@@ -15,25 +15,25 @@ const Team = () => {
           <div className={styles.teamGrid}>
             <div className={styles.teamMember}>
               <div className={styles.memberImage}>Pilar Ramajo</div>
-              <h3>Pilar Ramajo</h3>
+              <h3>Pascual Milam Tome</h3>
               <p>CEO</p>
               <p>Fundadora y jefa ejecutiva de Marketing Digital Directo.</p>
             </div>
             <div className={styles.teamMember}>
               <div className={styles.memberImage}>A. Moreno</div>
-              <h3>A. Moreno</h3>
+              <h3>E.V MAS ONEWE</h3>
               <p>Web designer/SEO</p>
               <p>Diseñador web y SEO de Marketing Digital Directo</p>
             </div>
             <div className={styles.teamMember}>
               <div className={styles.memberImage}>Juan A. Morales</div>
-              <h3>Juan A. Morales</h3>
+              <h3>Francisco Brayan Tome</h3>
               <p>Sales Manager</p>
               <p>Jefe de ventas de Marketing Digital Directo</p>
             </div>
             <div className={styles.teamMember}>
               <div className={styles.memberImage}>Tania López</div>
-              <h3>Tania López</h3>
+              <h3>Luis Barcena Cervera</h3>
               <p>Community Manager / copy writer</p>
               <p>Community Manager / copy writer</p>
             </div>
