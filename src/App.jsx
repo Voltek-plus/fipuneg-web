@@ -12,6 +12,7 @@ import Team from './components/AboutUs/Team';
 import Blog from './components/blog/Blog';
 import BlogDetail from './components/blog/BlogDetail';
 import AdminDashboard from './components/admin/AdminDashboard';
+import PresupuestoScreen from './components/Services/presupuesto/PresupuestoScreen';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/service-detail" element={<ServiceDetail />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/presupuesto" element={<PresupuestoScreen />} />
         <Route path="/services" element={<Home />} /> 
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/about" element={<AboutUs />} />

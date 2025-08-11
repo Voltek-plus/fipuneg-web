@@ -2,10 +2,12 @@
 import React, { useState, useEffect } from 'react'; 
 import styles from './Header.module.css';
 import Button from '../Button/Button';
+import { useNavigate } from 'react-router-dom';
 import logo from "../../assets/img/logo_PhotoGrid.png"
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -48,7 +50,16 @@ const Header = () => {
             <li><a href="#about" onClick={toggleMenu}>Nosotros</a></li>
             <li><a href="#contact" onClick={toggleMenu}>Contacto</a></li>
           </ul>
-          <Button variant="primary" className={styles.navButton}>SOLICITAR PRESUPUESTO</Button>
+          <Button
+            variant="primary"
+            onClick={() => {
+              navigate('/presupuesto');
+              setIsMenuOpen(false); // Opcional: cerrar menú móvil
+            }}
+            className={styles.navButton}
+          >
+            SOLICITAR PRESUPUESTO
+          </Button>
         </nav>
       </div>
     </header>
