@@ -13,6 +13,7 @@ import Blog from './components/blog/Blog';
 import BlogDetail from './components/blog/BlogDetail';
 import AdminDashboard from './components/admin/AdminDashboard';
 import PresupuestoScreen from './components/Services/presupuesto/PresupuestoScreen';
+import AllServiceScreen from './components/Services/AllAervices/AllServiceScreen';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/service-detail" element={<ServiceDetail />} />
+        <Route path="/servicios" element={<AllServiceScreen />} />
         <Route path="/team" element={<Team />} />
         <Route path="/presupuesto" element={<PresupuestoScreen />} />
         <Route path="/services" element={<Home />} /> 

@@ -11,8 +11,10 @@ import MarketNiches from '../../components/MarketNiches/MarketNiches';
 import Contact from '../../components/Contact/Contact';
 import logo from "../../assets/img/fipuneglogoblanco.png"
 import Blog from '../../components/blog/Blog';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div className={styles.home}>
       <Header />
@@ -24,8 +26,15 @@ const Home = () => {
               <h1>Agencia de Marketing Digital en Guinea Ecuatorial</h1>
               <p>Expertos en diseñar estrategias <strong>de marketing digital y embudos de ventas</strong> para canalizar prospectos de clientes y convertirlos en <strong>más ventas para tu negocio.</strong></p>
               <div className={styles.heroButtons}>
-                <Button variant="primary">SOLICITAR PRESUPUESTO</Button>
-                <Button variant="secondary">Ver Servicios</Button>
+                <Button variant="primary"  
+                onClick={() => {
+                  navigate('/presupuesto');
+                  etIsMenuOpen(false); // Opcional: cerrar menú móvil
+                  }}>SOLICITAR PRESUPUESTO</Button>
+                <Button variant="secondary"  onClick={() => {
+                  navigate('/servicios');
+                  etIsMenuOpen(false); // Opcional: cerrar menú móvil
+                  }}>Ver Servicios</Button>
               </div>
             </div>
             <div className={styles.heroImage}>
