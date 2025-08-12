@@ -49,10 +49,11 @@ const Header = () => {
 
         <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
           <ul className={styles.navList}>
-            <li><a href="#services" onClick={toggleMenu}>Servicios</a></li>
-            <li><a href="#portfolio" onClick={toggleMenu}>Portafolio</a></li>
-            <li><a href="#about" onClick={toggleMenu}>Nosotros</a></li>
-            <li><a href="#contact" onClick={toggleMenu}>Contacto</a></li>
+            <li><a href="/services" onClick={toggleMenu}>Servicios</a></li>
+            <li><a href="/all-portfolio" onClick={toggleMenu}>Portafolio</a></li>
+            <li><a href="/team" onClick={toggleMenu}>Nosotros</a></li>
+            <li><a href="/all-blog" onClick={toggleMenu}>Blog</a></li>
+            <li><a href="/contact" onClick={toggleMenu}>Contacto</a></li>
           </ul>
           <Button
             variant="primary"
