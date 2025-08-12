@@ -6,10 +6,10 @@ import Button from '../Button/Button';
 const AboutUs = () => {
   const navigate = useNavigate();
   const teamMembers = [
-    { name: 'Pilar Ramajo', role: 'CEO', desc: 'Fundadora y jefa ejecutiva de Marketing Digital Directo.', image: 'Pilar Ramajo' },
-    { name: 'A. Moreno', role: 'Web designer/SEO', desc: 'Diseñador web y SEO de Marketing Digital Directo', image: 'A. Moreno' },
-    { name: 'Juan A. Morales', role: 'Sales Manager', desc: 'Jefe de ventas de Marketing Digital Directo', image: 'Juan A. Morales' },
-    { name: 'Tania López', role: 'Community Manager / copy writer', desc: 'Community Manager / copy writer', image: 'Tania López' },
+    { name: 'Pascual Milam Tome', role: 'CEO', desc: 'Fundadora y jefa ejecutiva de Marketing Digital Directo.', image: 'Pilar Ramajo' },
+    { name: 'Francisco Brayan Tome', role: 'Sales Manager', desc: 'Jefe de ventas de Marketing Digital Directo', image: 'Juan A. Morales' },
+    { name: 'Luis V. Barcenas', role: 'Community Manager / copy writer', desc: 'Community Manager / copy writer', image: 'Tania López' },
+    { name: 'E.V MAS ONEWE', role: 'Web designer/SEO', desc: 'Diseñador web y SEO de Marketing Digital Directo', image: 'A. Moreno' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

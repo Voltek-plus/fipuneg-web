@@ -1,4 +1,8 @@
 /* src/App.css */
+html {
+  scroll-behavior: smooth;  
+}
+
 :root {
     /* Fuentes mejoradas */
   font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Avenir', 

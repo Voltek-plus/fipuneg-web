@@ -10,7 +10,6 @@ import AboutUs from '../../components/AboutUs/AboutUs';
 import MarketNiches from '../../components/MarketNiches/MarketNiches';
 import Contact from '../../components/Contact/Contact';
 import logo from "../../assets/img/fipuneglogoblanco.png";
-import branding from "../../assets/img/branding_fipuneg.jpg"; // Imagen de branding
 import Blog from '../../components/blog/Blog';
 import { useNavigate } from 'react-router-dom';
 

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './Header.module.css';
 import Button from '../Button/Button';
 import { useNavigate } from 'react-router-dom';
-import logo from "../../assets/img/logo_PhotoGrid.png"
+import logo from "../../assets/img/logo fipuneg png transparente-02.png"
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,9 +28,13 @@ const Header = () => {
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ''}`}>
       {/* El resto de tu código permanece exactamente igual */}
       <div className={styles.headerContainer}>
-        <div className={styles.logoContainer}>
+        <div className={styles.logoContainer} 
+             onClick={() => {
+              navigate('/');
+              setIsMenuOpen(false); // Opcional: cerrar menú móvil
+            }}
+          >
           <img src={logo} alt="FIPUNEG Logo" className={styles.logo} />
-          {/* <h1 className={styles.title}>FIPUNEG</h1> */}
         </div>
 
         <button 
